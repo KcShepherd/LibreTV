@@ -253,6 +253,19 @@ export async function onRequest(context) {
         return binaryPrefixes.some(prefix => contentType.toLowerCase().startsWith(prefix));
     }
 
+    // 根据目标域名智能选择Referer，绕过防盗链
+    function getSmartReferer(targetUrl, requestReferer) {
+        if (requestReferer) return requestReferer;
+        try {
+            const hostname = new URL(targetUrl).hostname;
+            // 豆瓣CDN域名 → 使用movie.douban.com作为Referer
+            if (hostname.endsWith('.doubanio.com') || hostname === 'doubanio.com') {
+                return 'https://movie.douban.com/';
+            }
+        } catch (e) { /* 解析失败则使用默认值 */ }
+        return new URL(targetUrl).origin;
+    }
+
     // 获取远程内容及其类型
     async function fetchContentWithType(targetUrl) {
         const headers = new Headers({
@@ -260,8 +273,8 @@ export async function onRequest(context) {
             'Accept': '*/*',
             // 尝试传递一些原始请求的头信息
             'Accept-Language': request.headers.get('Accept-Language') || 'zh-CN,zh;q=0.9,en;q=0.8',
-            // 尝试设置 Referer 为目标网站的域名，或者传递原始 Referer
-            'Referer': request.headers.get('Referer') || new URL(targetUrl).origin
+            // 智能Referer：对豆瓣CDN域名使用movie.douban.com绕过防盗链
+            'Referer': getSmartReferer(targetUrl, request.headers.get('Referer'))
         });
 
         try {
