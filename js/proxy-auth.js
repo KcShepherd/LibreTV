@@ -48,6 +48,7 @@ async function getPasswordHash() {
     // 4. 如果用户没有设置密码，尝试使用环境变量中的密码哈希
     if (window.__ENV__ && window.__ENV__.PASSWORD) {
         cachedPasswordHash = window.__ENV__.PASSWORD;
+        localStorage.setItem('proxyAuthHash', window.__ENV__.PASSWORD);
         return window.__ENV__.PASSWORD;
     }
     

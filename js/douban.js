@@ -499,11 +499,28 @@ async function fetchDoubanData(url) {
     }
 }
 
+// 同步获取代理鉴权参数（用于图片URL拼接，避免异步问题）
+function getProxyAuthParams() {
+    try {
+        const hash = localStorage.getItem('proxyAuthHash');
+        if (hash) {
+            const timestamp = Date.now();
+            return `?auth=${encodeURIComponent(hash)}&t=${timestamp}`;
+        }
+    } catch (e) {
+        console.error('获取代理鉴权参数失败：', e);
+    }
+    return '';
+}
+
 // 抽取渲染豆瓣卡片的逻辑到单独函数
 function renderDoubanCards(data, container) {
+    // 预先获取鉴权参数，所有卡片共用
+    const authParams = getProxyAuthParams();
+
     // 创建文档片段以提高性能
     const fragment = document.createDocumentFragment();
-    
+
     // 如果没有数据
     if (!data.subjects || data.subjects.length === 0) {
         const emptyEl = document.createElement("div");
@@ -517,31 +534,31 @@ function renderDoubanCards(data, container) {
         data.subjects.forEach(item => {
             const card = document.createElement("div");
             card.className = "bg-[#111] hover:bg-[#222] transition-all duration-300 rounded-lg overflow-hidden flex flex-col transform hover:scale-105 shadow-md hover:shadow-lg";
-            
+
             // 生成卡片内容，确保安全显示（防止XSS）
             const safeTitle = item.title
                 .replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;')
                 .replace(/"/g, '&quot;');
-            
+
             const safeRate = (item.rate || "暂无")
                 .replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;');
-            
-            // 处理图片URL
-            // 1. 直接使用豆瓣图片URL (添加no-referrer属性)
+
+            // 处理图片URL — 优先走代理（代理设置正确Referer绕过豆瓣防盗链）
             const originalCoverUrl = item.cover;
-            
-            // 2. 也准备代理URL作为备选
-            const proxiedCoverUrl = PROXY_URL + encodeURIComponent(originalCoverUrl);
-            
+            // 带鉴权的代理URL
+            const proxiedCoverUrl = PROXY_URL + encodeURIComponent(originalCoverUrl) + authParams;
+            // 对直接URL做HTML转义，用于onerror回退
+            const escapedCoverUrl = originalCoverUrl.replace(/&/g, '&amp;').replace(/'/g, '&#39;');
+
             // 为不同设备优化卡片布局
             card.innerHTML = `
                 <div class="relative w-full aspect-[2/3] overflow-hidden cursor-pointer" onclick="fillAndSearchWithDouban('${safeTitle}')">
-                    <img src="${originalCoverUrl}" alt="${safeTitle}" 
+                    <img src="${proxiedCoverUrl}" alt="${safeTitle}"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        onerror="this.onerror=null; this.src='${proxiedCoverUrl}'; this.classList.add('object-contain');"
-                        loading="lazy" referrerpolicy="no-referrer">
+                        onerror="this.onerror=null; this.src='${escapedCoverUrl}'; this.setAttribute('referrerpolicy','no-referrer');"
+                        loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-sm">
                         <span class="text-yellow-400">★</span> ${safeRate}
@@ -553,18 +570,18 @@ function renderDoubanCards(data, container) {
                     </div>
                 </div>
                 <div class="p-2 text-center bg-[#111]">
-                    <button onclick="fillAndSearchWithDouban('${safeTitle}')" 
+                    <button onclick="fillAndSearchWithDouban('${safeTitle}')"
                             class="text-sm font-medium text-white truncate w-full hover:text-pink-400 transition"
                             title="${safeTitle}">
                         ${safeTitle}
                     </button>
                 </div>
             `;
-            
+
             fragment.appendChild(card);
         });
     }
-    
+
     // 清空并添加所有新元素
     container.innerHTML = "";
     container.appendChild(fragment);
