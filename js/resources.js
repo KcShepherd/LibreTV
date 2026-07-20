@@ -164,7 +164,7 @@ function updateResourcesVisibility() {
     const area = document.getElementById('resourcesArea');
     if (!area) return;
 
-    const enabled = localStorage.getItem('resourcesEnabled') === 'true';
+    const enabled = localStorage.getItem('resourcesEnabled') !== 'false'; // 默认开启
     const resultsVisible = !document.getElementById('resultsArea')?.classList.contains('hidden');
 
     if (enabled && !resultsVisible) {

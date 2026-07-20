@@ -1078,7 +1078,7 @@ function closeVideoPlayer(home = false) {
         }
 
         // 恢复推荐站点区域
-        if (localStorage.getItem('resourcesEnabled') === 'true') {
+        if (localStorage.getItem('resourcesEnabled') !== 'false') {
             const resourcesArea = document.getElementById('resourcesArea');
             if (resourcesArea) resourcesArea.classList.remove('hidden');
         }
