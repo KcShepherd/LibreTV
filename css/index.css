@@ -207,3 +207,22 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* 推荐站点卡片样式 */
+.resource-card {
+    min-height: 220px;
+}
+
+.resource-card:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* 资源分类标签栏滚动优化 */
+#resources-category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+#resources-category-tabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

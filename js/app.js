@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // 默认启用豆瓣功能
         localStorage.setItem('doubanEnabled', 'true');
 
+        // 默认启用推荐站点
+        localStorage.setItem('resourcesEnabled', 'true');
+
         // 标记已初始化默认值
         localStorage.setItem('hasInitializedDefaults', 'true');
     }
@@ -580,6 +583,11 @@ function resetSearchArea() {
         updateDoubanVisibility();
     }
 
+    // 恢复推荐站点区域
+    if (typeof updateResourcesVisibility === 'function') {
+        updateResourcesVisibility();
+    }
+
     // 重置URL为主页
     try {
         window.history.pushState(
@@ -681,6 +689,12 @@ async function search() {
         const doubanArea = document.getElementById('doubanArea');
         if (doubanArea) {
             doubanArea.classList.add('hidden');
+        }
+
+        // 隐藏推荐站点区域
+        const resourcesArea = document.getElementById('resourcesArea');
+        if (resourcesArea) {
+            resourcesArea.classList.add('hidden');
         }
 
         const resultsDiv = document.getElementById('results');
@@ -1034,6 +1048,8 @@ function showVideoPlayer(url) {
     // 临时隐藏搜索结果和豆瓣区域，防止高度超出播放器而出现滚动条
     document.getElementById('resultsArea').classList.add('hidden');
     document.getElementById('doubanArea').classList.add('hidden');
+    const resourcesArea = document.getElementById('resourcesArea');
+    if (resourcesArea) resourcesArea.classList.add('hidden');
     // 在框架中打开播放页面
     videoPlayerFrame = document.createElement('iframe');
     videoPlayerFrame.id = 'VideoPlayerFrame';
@@ -1059,6 +1075,12 @@ function closeVideoPlayer(home = false) {
         // 如果启用豆瓣区域则显示豆瓣区域
         if (localStorage.getItem('doubanEnabled') === 'true') {
             document.getElementById('doubanArea').classList.remove('hidden');
+        }
+
+        // 恢复推荐站点区域
+        if (localStorage.getItem('resourcesEnabled') === 'true') {
+            const resourcesArea = document.getElementById('resourcesArea');
+            if (resourcesArea) resourcesArea.classList.remove('hidden');
         }
     }
     if (home) {
@@ -1303,6 +1325,7 @@ async function exportConfig() {
         'yellowFilterEnabled',
         'adFilteringEnabled',
         'doubanEnabled',
+        'resourcesEnabled',
         'hasInitializedDefaults'
     ];
 
