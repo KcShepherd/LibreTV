@@ -151,12 +151,20 @@ async function handleApiRequest(url) {
                 if (videoDetail.vod_play_url) {
                     // 分割不同播放源
                     const playSources = videoDetail.vod_play_url.split('$$$');
-                    
+
+                    // 优先选择包含 .m3u8 直链的播放源
+                    let mainSource = playSources[0];
+                    for (const src of playSources) {
+                        if (src.includes('.m3u8')) {
+                            mainSource = src;
+                            break;
+                        }
+                    }
+
                     // 提取第一个播放源的集数（通常为主要源）
-                    if (playSources.length > 0) {
-                        const mainSource = playSources[0];
+                    if (mainSource) {
                         const episodeList = mainSource.split('#');
-                        
+
                         // 从每个集数中提取URL
                         episodes = episodeList.map(ep => {
                             const parts = ep.split('$');
