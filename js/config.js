@@ -119,17 +119,9 @@ const API_SITES = {
         api: 'http://ffzy.tv/api.php/provide/vod',
         name: '非凡[直连]'
     },
-    suoni: {
-        api: 'https://suoniapi.com/api.php/provide/vod/',
-        name: '索尼资源'
-    },
     hongniu: {
         api: 'https://www.hongniuzy2.com/api.php/provide/vod',
         name: '红牛资源'
-    },
-    sdzy: {
-        api: 'http://sdzyapi.com/api.php/provide/vod',
-        name: '闪电资源'
     },
     guangsu: {
         api: 'https://api.guangsuapi.com/api.php/provide/vod',
