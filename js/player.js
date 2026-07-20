@@ -396,6 +396,50 @@ function showShortcutHint(text, direction) {
     }, 2000);
 }
 
+// 更新分辨率标签
+function updateResolutionBadge(hls) {
+    const badge = document.getElementById('resolutionBadge');
+    if (!badge) return;
+
+    const levels = hls.levels || [];
+    const currentLevel = hls.currentLevel;
+
+    if (levels.length === 0) {
+        badge.classList.add('hidden');
+        return;
+    }
+
+    // 只有一个清晰度或当前为自动
+    if (currentLevel === -1) {
+        // 自动模式 — 显示最高可用分辨率
+        const maxHeight = Math.max(...levels.map(l => l.height || 0));
+        if (maxHeight > 0) {
+            badge.textContent = levels.length > 1 ? `自动 ${formatResolution(maxHeight)}` : formatResolution(maxHeight);
+        } else {
+            badge.textContent = levels.length > 1 ? '自动' : '标清';
+        }
+        badge.classList.remove('hidden');
+        return;
+    }
+
+    // 手动选择了某个清晰度
+    const level = levels[currentLevel];
+    if (level && level.height) {
+        badge.textContent = formatResolution(level.height);
+        badge.classList.remove('hidden');
+    }
+}
+
+// 格式化分辨率显示
+function formatResolution(height) {
+    if (height >= 2160) return '4K';
+    if (height >= 1440) return '2K';
+    if (height >= 1080) return '1080P';
+    if (height >= 720) return '720P';
+    if (height >= 480) return '480P';
+    return height + 'P';
+}
+
 // 初始化播放器
 function initPlayer(videoUrl) {
     if (!videoUrl) {
@@ -527,8 +571,14 @@ function initPlayer(videoUrl) {
                 video.disableRemotePlayback = false;
 
                 hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    // 更新分辨率标签
+                    updateResolutionBadge(hls);
                     video.play().catch(e => {
                     });
+                });
+
+                hls.on(Hls.Events.LEVEL_SWITCHED, function () {
+                    updateResolutionBadge(hls);
                 });
 
                 hls.on(Hls.Events.ERROR, function (event, data) {
