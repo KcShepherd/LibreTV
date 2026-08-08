@@ -513,10 +513,21 @@ function getProxyAuthParams() {
     return '';
 }
 
+// 获取图片代理URL（不带时间戳，避免懒加载图片因时间戳过期而鉴权失败）
+// 代理层在没有timestamp参数时跳过期检查，仅验证auth hash
+function getImageProxyUrl(originalUrl) {
+    if (!originalUrl || !originalUrl.startsWith('http')) return originalUrl;
+    try {
+        const hash = localStorage.getItem('proxyAuthHash');
+        if (hash) {
+            return PROXY_URL + encodeURIComponent(originalUrl) + '?auth=' + encodeURIComponent(hash);
+        }
+    } catch (e) { /* localStorage 不可用时忽略 */ }
+    return PROXY_URL + encodeURIComponent(originalUrl);
+}
+
 // 抽取渲染豆瓣卡片的逻辑到单独函数
 function renderDoubanCards(data, container) {
-    // 预先获取鉴权参数，所有卡片共用
-    const authParams = getProxyAuthParams();
 
     // 创建文档片段以提高性能
     const fragment = document.createDocumentFragment();
@@ -547,8 +558,8 @@ function renderDoubanCards(data, container) {
 
             // 处理图片URL — 优先走代理（代理设置正确Referer绕过豆瓣防盗链）
             const originalCoverUrl = item.cover;
-            // 带鉴权的代理URL
-            const proxiedCoverUrl = PROXY_URL + encodeURIComponent(originalCoverUrl) + authParams;
+            // 不带时间戳的代理URL，避免懒加载时auth过期
+            const proxiedCoverUrl = getImageProxyUrl(originalCoverUrl);
             // 对直接URL做HTML转义，用于onerror回退
             const escapedCoverUrl = originalCoverUrl.replace(/&/g, '&amp;').replace(/'/g, '&#39;');
 

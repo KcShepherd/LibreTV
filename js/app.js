@@ -759,8 +759,8 @@ async function search() {
 
             // 修改为水平卡片布局，图片在左侧，文本在右侧，并优化样式
             const hasCover = item.vod_pic && item.vod_pic.startsWith('http');
-            // 图片走代理，解决 Mixed Content / 防盗链问题
-            const proxiedPic = hasCover ? PROXY_URL + encodeURIComponent(item.vod_pic) + (typeof getProxyAuthParams === 'function' ? getProxyAuthParams() : '') : '';
+            // 图片走代理（不带时间戳，避免懒加载时auth过期）
+            const proxiedPic = hasCover ? (typeof getImageProxyUrl === 'function' ? getImageProxyUrl(item.vod_pic) : item.vod_pic) : '';
             // 内联 SVG 占位图（不依赖外部服务）
             const placeholderSVG = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect fill="#1a1a1a" width="300" height="450"/><text fill="#666" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="16" font-family="sans-serif">无封面</text></svg>');
 

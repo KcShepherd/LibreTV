@@ -1729,7 +1729,7 @@ async function showSwitchResourceModal() {
             <div class="relative group ${isCurrentSource ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-105 transition-transform'}" 
                  ${!isCurrentSource ? `onclick="switchToResource('${sourceKey}', '${result.vod_id}')"` : ''}>
                 <div class="aspect-[2/3] rounded-lg overflow-hidden bg-gray-800 relative">
-                    <img src="${PROXY_URL}${encodeURIComponent(result.vod_pic)}${typeof getProxyAuthParams==='function'?getProxyAuthParams():''}"
+                    <img src="${typeof getImageProxyUrl==='function'?getImageProxyUrl(result.vod_pic):result.vod_pic}"
                          alt="${result.vod_name}"
                          class="w-full h-full object-cover"
                          onerror="this.onerror=null;this.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;300&quot; height=&quot;450&quot;><rect fill=&quot;%231a1a1a&quot; width=&quot;300&quot; height=&quot;450&quot;/><text fill=&quot;%23666&quot; x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; dy=&quot;.3em&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>无封面</text></svg>');this.classList.add('object-contain');">
