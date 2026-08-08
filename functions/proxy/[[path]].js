@@ -255,15 +255,19 @@ export async function onRequest(context) {
 
     // 根据目标域名智能选择Referer，绕过防盗链
     function getSmartReferer(targetUrl, requestReferer) {
-        if (requestReferer) return requestReferer;
         try {
             const hostname = new URL(targetUrl).hostname;
-            // 豆瓣CDN域名 → 使用movie.douban.com作为Referer
+            // 豆瓣CDN域名 → 始终使用movie.douban.com，忽略浏览器发来的Referer
             if (hostname.endsWith('.doubanio.com') || hostname === 'doubanio.com') {
                 return 'https://movie.douban.com/';
             }
-        } catch (e) { /* 解析失败则使用默认值 */ }
-        return new URL(targetUrl).origin;
+        } catch (e) { /* 解析失败继续 */ }
+        // 非豆瓣域名：优先用浏览器Referer，否则用目标域名origin
+        if (requestReferer) return requestReferer;
+        try {
+            return new URL(targetUrl).origin;
+        } catch (e) { /* 解析失败 */ }
+        return requestReferer;
     }
 
     // 获取远程内容及其类型

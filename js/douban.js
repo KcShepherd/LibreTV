@@ -556,19 +556,15 @@ function renderDoubanCards(data, container) {
                 .replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;');
 
-            // 处理图片URL — 优先走代理（代理设置正确Referer绕过豆瓣防盗链）
-            const originalCoverUrl = item.cover;
-            // 不带时间戳的代理URL，避免懒加载时auth过期
-            const proxiedCoverUrl = getImageProxyUrl(originalCoverUrl);
-            // 对直接URL做HTML转义，用于onerror回退
-            const escapedCoverUrl = originalCoverUrl.replace(/&/g, '&amp;').replace(/'/g, '&#39;');
+            // 豆瓣图片必须走代理（豆瓣强制要求 Referer: movie.douban.com，直连返回418）
+            const proxiedCoverUrl = getImageProxyUrl(item.cover);
 
             // 为不同设备优化卡片布局
             card.innerHTML = `
                 <div class="relative w-full aspect-[2/3] overflow-hidden cursor-pointer" onclick="fillAndSearchWithDouban('${safeTitle}')">
                     <img src="${proxiedCoverUrl}" alt="${safeTitle}"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        onerror="if(!this.dataset.r1){this.dataset.r1=1;this.src='${escapedCoverUrl}';this.setAttribute('referrerpolicy','no-referrer');}else{this.onerror=null;this.src='${DATAURI_PLACEHOLDER}';this.classList.add('object-contain');}"
+                        onerror="this.onerror=null;this.src='${DATAURI_PLACEHOLDER}';this.classList.add('object-contain');"
                         loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-sm">
