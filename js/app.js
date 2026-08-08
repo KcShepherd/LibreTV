@@ -759,16 +759,20 @@ async function search() {
 
             // 修改为水平卡片布局，图片在左侧，文本在右侧，并优化样式
             const hasCover = item.vod_pic && item.vod_pic.startsWith('http');
+            // 图片走代理，解决 Mixed Content / 防盗链问题
+            const proxiedPic = hasCover ? PROXY_URL + encodeURIComponent(item.vod_pic) + (typeof getProxyAuthParams === 'function' ? getProxyAuthParams() : '') : '';
+            // 内联 SVG 占位图（不依赖外部服务）
+            const placeholderSVG = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect fill="#1a1a1a" width="300" height="450"/><text fill="#666" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="16" font-family="sans-serif">无封面</text></svg>');
 
             return `
-                <div class="card-hover bg-[#111] rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-[1.02] h-full shadow-sm hover:shadow-md" 
+                <div class="card-hover bg-[#111] rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-[1.02] h-full shadow-sm hover:shadow-md"
                      onclick="showDetails('${safeId}','${safeName}','${sourceCode}')" ${apiUrlAttr}>
                     <div class="flex h-full">
                         ${hasCover ? `
                         <div class="relative flex-shrink-0 search-card-img-container">
-                            <img src="${item.vod_pic}" alt="${safeName}" 
-                                 class="h-full w-full object-cover transition-transform hover:scale-110" 
-                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/300x450?text=无封面'; this.classList.add('object-contain');" 
+                            <img src="${proxiedPic}" alt="${safeName}"
+                                 class="h-full w-full object-cover transition-transform hover:scale-110"
+                                 onerror="this.onerror=null;this.src='${placeholderSVG}';this.classList.add('object-contain');"
                                  loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                         </div>` : ''}

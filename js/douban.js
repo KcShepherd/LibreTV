@@ -557,7 +557,7 @@ function renderDoubanCards(data, container) {
                 <div class="relative w-full aspect-[2/3] overflow-hidden cursor-pointer" onclick="fillAndSearchWithDouban('${safeTitle}')">
                     <img src="${proxiedCoverUrl}" alt="${safeTitle}"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        onerror="this.onerror=null; this.src='${escapedCoverUrl}'; this.setAttribute('referrerpolicy','no-referrer');"
+                        onerror="if(!this.dataset.r1){this.dataset.r1=1;this.src='${escapedCoverUrl}';this.setAttribute('referrerpolicy','no-referrer');}else{this.onerror=null;this.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;300&quot; height=&quot;450&quot;><rect fill=&quot;%231a1a1a&quot; width=&quot;300&quot; height=&quot;450&quot;/><text fill=&quot;%23666&quot; x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; dy=&quot;.3em&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>无封面</text></svg>');this.classList.add('object-contain');}"
                         loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-sm">
