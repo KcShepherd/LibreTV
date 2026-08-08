@@ -1,5 +1,7 @@
 // 全局常量配置
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
+// 预编码 SVG 占位图（深灰底 + 浅灰文字"无封面"，一次性编码避免浏览器端双重编码）
+const DATAURI_PLACEHOLDER = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22450%22%3E%3Crect%20fill%3D%22%23222%22%20width%3D%22300%22%20height%3D%22450%22%2F%3E%3Ctext%20fill%3D%22%23999%22%20x%3D%22150%22%20y%3D%22215%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-family%3D%22sans-serif%22%3E%E6%97%A0%E5%B0%81%E9%9D%A2%3C%2Ftext%3E%3C%2Fsvg%3E';
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
 const MAX_HISTORY_ITEMS = 5;
