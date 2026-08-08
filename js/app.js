@@ -902,9 +902,9 @@ async function showDetails(id, vod_name, sourceCode) {
             source_name: API_SITES[sourceCode] ? API_SITES[sourceCode].name : '当前源' });
     }
 
-    // 打开弹窗，显示加载状态
+    // 打开弹窗，只显示转圈
     modalTitle.innerHTML = `<span class="break-words">${vod_name}</span>`;
-    modalContent.innerHTML = `<div class="text-center py-8"><div class="w-6 h-6 border-2 border-pink-500 border-t-transparent rounded-full animate-spin inline-block"></div><span class="text-pink-500 ml-4">正在测速 ${sources.length} 个源...</span></div>`;
+    modalContent.innerHTML = `<div class="text-center py-12"><div class="w-8 h-8 border-2 border-pink-500 border-t-transparent rounded-full animate-spin mx-auto"></div></div>`;
     modal.classList.remove('hidden');
 
     // 并行拉取所有源的详情（天然测速）
@@ -945,17 +945,17 @@ async function showDetails(id, vod_name, sourceCode) {
     // 存储结果供切换使用
     window._speedResults = results;
 
-    // 渲染源选择卡片
-    const speedColor = (ms) => ms < 500 ? 'text-green-400' : ms < 1500 ? 'text-yellow-400' : 'text-red-400';
+    // 渲染源选择卡片（速度标识在右上角，和播放器"切换资源"一致）
+    const speedClass = (ms) => ms < 500 ? 'bg-green-900 text-green-300' : ms < 1500 ? 'bg-yellow-900 text-yellow-300' : 'bg-red-900 text-red-300';
     const pickerHTML = sources.length > 1 ? `
         <div class="mb-4 p-3 bg-[#151515] rounded-lg">
-            <div class="text-xs text-gray-500 mb-2">共 ${sources.length} 个源，按速度排序（点击切换）</div>
+            <div class="text-xs text-gray-500 mb-2">共 ${sources.length} 个源 · 按速度排序</div>
             <div class="flex flex-wrap gap-2">
                 ${results.map((r, i) => `
                     <button onclick="window._switchDetailSource(${i})"
-                            class="px-3 py-2 bg-[#222] hover:bg-[#333] border ${i === 0 ? 'border-pink-500 bg-[#2a2a2a]' : 'border-[#333]'} hover:border-pink-400 rounded-lg text-left transition-all">
+                            class="relative px-3 py-2 bg-[#222] hover:bg-[#333] border ${i === 0 ? 'border-pink-500 bg-[#2a2a2a]' : 'border-[#333]'} hover:border-pink-400 rounded-lg text-left transition-all min-w-[100px]">
+                        ${r.ok ? `<span class="absolute -top-1.5 -right-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${speedClass(r.ms)}">${r.ms}ms</span>` : `<span class="absolute -top-1.5 -right-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-900 text-red-300">失败</span>`}
                         <span class="text-sm text-white">${r.src.source_name}</span>
-                        ${r.ok ? `<span class="ml-1 text-xs ${speedColor(r.ms)}">${r.ms}ms</span>` : `<span class="ml-1 text-xs text-red-500">失败</span>`}
                     </button>
                 `).join('')}
             </div>
@@ -979,16 +979,16 @@ window._switchDetailSource = function(index) {
     modalContent.innerHTML = `<div class="text-center py-8"><div class="w-6 h-6 border-2 border-pink-500 border-t-transparent rounded-full animate-spin inline-block"></div></div>`;
 
     // 重建 picker（高亮当前选中）
-    const speedColor = (ms) => ms < 500 ? 'text-green-400' : ms < 1500 ? 'text-yellow-400' : 'text-red-400';
+    const speedClass = (ms) => ms < 500 ? 'bg-green-900 text-green-300' : ms < 1500 ? 'bg-yellow-900 text-yellow-300' : 'bg-red-900 text-red-300';
     const pickerHTML = results.length > 1 ? `
         <div class="mb-4 p-3 bg-[#151515] rounded-lg">
-            <div class="text-xs text-gray-500 mb-2">共 ${results.length} 个源，按速度排序（点击切换）</div>
+            <div class="text-xs text-gray-500 mb-2">共 ${results.length} 个源 · 按速度排序</div>
             <div class="flex flex-wrap gap-2">
                 ${results.map((r2, i) => `
                     <button onclick="window._switchDetailSource(${i})"
-                            class="px-3 py-2 bg-[#222] hover:bg-[#333] border ${i === index ? 'border-pink-500 bg-[#2a2a2a]' : 'border-[#333]'} hover:border-pink-400 rounded-lg text-left transition-all">
+                            class="relative px-3 py-2 bg-[#222] hover:bg-[#333] border ${i === index ? 'border-pink-500 bg-[#2a2a2a]' : 'border-[#333]'} hover:border-pink-400 rounded-lg text-left transition-all min-w-[100px]">
+                        ${r2.ok ? `<span class="absolute -top-1.5 -right-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${speedClass(r2.ms)}">${r2.ms}ms</span>` : `<span class="absolute -top-1.5 -right-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-900 text-red-300">失败</span>`}
                         <span class="text-sm text-white">${r2.src.source_name}</span>
-                        ${r2.ok ? `<span class="ml-1 text-xs ${speedColor(r2.ms)}">${r2.ms}ms</span>` : `<span class="ml-1 text-xs text-red-500">失败</span>`}
                     </button>
                 `).join('')}
             </div>
