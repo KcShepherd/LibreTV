@@ -1729,10 +1729,10 @@ async function showSwitchResourceModal() {
             <div class="relative group ${isCurrentSource ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-105 transition-transform'}" 
                  ${!isCurrentSource ? `onclick="switchToResource('${sourceKey}', '${result.vod_id}')"` : ''}>
                 <div class="aspect-[2/3] rounded-lg overflow-hidden bg-gray-800 relative">
-                    <img src="${typeof getImageProxyUrl==='function'?getImageProxyUrl(result.vod_pic):result.vod_pic}"
+                    <img src="${result.vod_pic}" referrerpolicy="no-referrer"
                          alt="${result.vod_name}"
                          class="w-full h-full object-cover"
-                         onerror="this.onerror=null;this.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;300&quot; height=&quot;450&quot;><rect fill=&quot;%231a1a1a&quot; width=&quot;300&quot; height=&quot;450&quot;/><text fill=&quot;%23666&quot; x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; dy=&quot;.3em&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>无封面</text></svg>');this.classList.add('object-contain');">
+                         onerror="if(!this.dataset.r1){this.dataset.r1=1;this.src='${typeof getImageProxyUrl==='function'?getImageProxyUrl(result.vod_pic).replace(/'/g,'&#39;'):result.vod_pic}';}else{this.onerror=null;this.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;300&quot; height=&quot;450&quot;><rect fill=&quot;%23222&quot; width=&quot;300&quot; height=&quot;450&quot;/><text fill=&quot;%23999&quot; x=&quot;50%&quot; y=&quot;45%&quot; text-anchor=&quot;middle&quot; font-size=&quot;18&quot; font-family=&quot;sans-serif&quot;>🖼</text><text fill=&quot;%23777&quot; x=&quot;50%&quot; y=&quot;55%&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-family=&quot;sans-serif&quot;>无封面</text></svg>');this.classList.add('object-contain');}">
                     
                     <!-- 速率显示在图片右上角 -->
                     <div class="absolute top-1 right-1 speed-badge bg-black bg-opacity-75">

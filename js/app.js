@@ -759,10 +759,10 @@ async function search() {
 
             // 修改为水平卡片布局，图片在左侧，文本在右侧，并优化样式
             const hasCover = item.vod_pic && item.vod_pic.startsWith('http');
-            // 图片走代理（不带时间戳，避免懒加载时auth过期）
-            const proxiedPic = hasCover ? (typeof getImageProxyUrl === 'function' ? getImageProxyUrl(item.vod_pic) : item.vod_pic) : '';
-            // 内联 SVG 占位图（不依赖外部服务）
-            const placeholderSVG = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect fill="#1a1a1a" width="300" height="450"/><text fill="#666" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="16" font-family="sans-serif">无封面</text></svg>');
+            // 直连URL（转义用于JS字符串），加 no-referrer 绕过简单防盗链
+            const directUrl = hasCover ? item.vod_pic.replace(/&/g, '&amp;').replace(/'/g, '&#39;') : '';
+            // 代理URL 作为备用（不带时间戳，避免懒加载时auth过期）
+            const proxyUrl = hasCover && typeof getImageProxyUrl === 'function' ? getImageProxyUrl(item.vod_pic).replace(/'/g, '&#39;') : '';
 
             return `
                 <div class="card-hover bg-[#111] rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-[1.02] h-full shadow-sm hover:shadow-md"
@@ -770,9 +770,9 @@ async function search() {
                     <div class="flex h-full">
                         ${hasCover ? `
                         <div class="relative flex-shrink-0 search-card-img-container">
-                            <img src="${proxiedPic}" alt="${safeName}"
+                            <img src="${directUrl}" alt="${safeName}" referrerpolicy="no-referrer"
                                  class="h-full w-full object-cover transition-transform hover:scale-110"
-                                 onerror="this.onerror=null;this.src='${placeholderSVG}';this.classList.add('object-contain');"
+                                 onerror="if(!this.dataset.r1){this.dataset.r1=1;this.src='${proxyUrl}';}else{this.onerror=null;this.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;300&quot; height=&quot;450&quot;><rect fill=&quot;%23222&quot; width=&quot;300&quot; height=&quot;450&quot;/><text fill=&quot;%23999&quot; x=&quot;50%&quot; y=&quot;45%&quot; text-anchor=&quot;middle&quot; font-size=&quot;18&quot; font-family=&quot;sans-serif&quot;>🖼</text><text fill=&quot;%23777&quot; x=&quot;50%&quot; y=&quot;55%&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-family=&quot;sans-serif&quot;>无封面</text></svg>');this.classList.add('object-contain');}"
                                  loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                         </div>` : ''}
