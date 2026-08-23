@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "version": 1,
-  "updated_at": "2026-07-19",
+  "updated_at": "2026-08-17",
   "resources": [
     {
       "id": "no-video",
@@ -45,7 +45,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-13"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:38.775Z"
+      }
     },
     {
       "id": "gaze-red",
@@ -90,7 +94,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-13"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:38.824Z"
+      }
     },
     {
       "id": "sotvla",
@@ -135,7 +143,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-13"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:38.825Z"
+      }
     },
     {
       "id": "xlys",
@@ -180,7 +192,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-13"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:38.826Z"
+      }
     },
     {
       "id": "duonao-video",
@@ -224,7 +240,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "unreachable",
+        "checked_at": "2026-08-23T01:33:39.116Z"
+      }
     },
     {
       "id": "tdgo",
@@ -268,7 +288,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:39.165Z"
+      }
     },
     {
       "id": "ddmf",
@@ -312,7 +336,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:39.588Z"
+      }
     },
     {
       "id": "sorani",
@@ -356,7 +384,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:39.697Z"
+      }
     },
     {
       "id": "appmovie",
@@ -400,7 +432,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:40.131Z"
+      }
     },
     {
       "id": "ai-movie",
@@ -444,7 +480,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:40.275Z"
+      }
     },
     {
       "id": "jpyy",
@@ -488,7 +528,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "unreachable",
+        "checked_at": "2026-08-23T01:33:40.520Z"
+      }
     },
     {
       "id": "tv-937",
@@ -532,7 +576,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:40.607Z"
+      }
     },
     {
       "id": "iyf",
@@ -576,7 +624,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:40.698Z"
+      }
     },
     {
       "id": "czzymovie",
@@ -620,7 +672,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:40.767Z"
+      }
     },
     {
       "id": "libvio",
@@ -664,7 +720,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:41.119Z"
+      }
     },
     {
       "id": "auete-video",
@@ -708,7 +768,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:41.768Z"
+      }
     },
     {
       "id": "dyrs",
@@ -752,7 +816,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.030Z"
+      }
     },
     {
       "id": "darkvod",
@@ -796,7 +864,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:42.210Z"
+      }
     },
     {
       "id": "netflixgc",
@@ -840,7 +912,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:42.412Z"
+      }
     },
     {
       "id": "nfyingshi",
@@ -884,7 +960,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.432Z"
+      }
     },
     {
       "id": "nivod",
@@ -928,7 +1008,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.480Z"
+      }
     },
     {
       "id": "ppnix",
@@ -972,7 +1056,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.603Z"
+      }
     },
     {
       "id": "dbku",
@@ -1016,7 +1104,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.773Z"
+      }
     },
     {
       "id": "bubu-zhuiju",
@@ -1060,7 +1152,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.824Z"
+      }
     },
     {
       "id": "yingmao-cangku",
@@ -1104,20 +1200,25 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:42.882Z"
+      }
     },
     {
       "id": "aikanbot",
       "name": "爱看机器人",
       "url": "https://www1.aikanbot.com",
       "category": "online_video",
-      "summary": "全网热门的电影和电视剧榜单。",
-      "summary_short": "全网热门的电影和电视剧榜单",
+      "summary": "热门电影电视剧（有跳转广告）。",
+      "summary_short": "热门电影电视剧（有跳转广告）",
       "tags": [
         "在线影视",
         "电影",
         "电视剧",
-        "榜单"
+        "有广告",
+        "跳转广告"
       ],
       "access": {
         "requires_login": false,
@@ -1127,11 +1228,11 @@
         ]
       },
       "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
+        "more": 3,
+        "speed": 3,
+        "clean": 3,
+        "stable": 3,
+        "ease": 3
       },
       "risks": {
         "copyright": "high",
@@ -1141,15 +1242,19 @@
       },
       "verification": {
         "status": "caution",
-        "last_checked": "2026-07-18",
+        "last_checked": "2026-08-09",
         "method": "manual",
-        "notes": "根据用户补充收录：推荐指数 5 星，简介为全网热门的电影和电视剧榜单；提交状态不作为本项目状态依据，后续由自动检测刷新可访问状态。"
+        "notes": "根据用户补充将推荐指数从 5 星调整为 3 星，简介更新为热门电影电视剧（有跳转广告）；后续由自动检测刷新可访问状态，并持续观察广告跳转、版权状态与站点安全性。"
       },
       "source": {
         "submitted_by": "maintainer",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.931Z"
+      }
     },
     {
       "id": "duse91",
@@ -1194,7 +1299,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "unreachable",
+        "checked_at": "2026-08-23T01:33:42.939Z"
+      }
     },
     {
       "id": "guangsu-yingshi",
@@ -1238,7 +1347,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:42.988Z"
+      }
     },
     {
       "id": "haohaokan",
@@ -1283,7 +1396,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "unreachable",
+        "checked_at": "2026-08-23T01:33:43.033Z"
+      }
     },
     {
       "id": "ifn",
@@ -1327,7 +1444,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:43.776Z"
+      }
     },
     {
       "id": "animeko-app",
@@ -1384,7 +1505,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-10"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.207Z"
+      }
     },
     {
       "id": "kazumi",
@@ -1441,7 +1566,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-11"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.486Z"
+      }
     },
     {
       "id": "selenetv-app",
@@ -1496,7 +1625,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.488Z"
+      }
     },
     {
       "id": "zimuku",
@@ -1540,7 +1673,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "unreachable",
+        "checked_at": "2026-08-23T01:33:44.530Z"
+      }
     },
     {
       "id": "assrt",
@@ -1584,7 +1721,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.660Z"
+      }
     },
     {
       "id": "subhd",
@@ -1628,7 +1769,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:44.724Z"
+      }
     },
     {
       "id": "kodi",
@@ -1672,7 +1817,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-06"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:44.750Z"
+      }
     },
     {
       "id": "iptv-org",
@@ -1716,7 +1865,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-06"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.757Z"
+      }
     },
     {
       "id": "fan-tai-ying",
@@ -1762,7 +1915,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 1
+      "featured_order": 1,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:44.778Z"
+      }
     },
     {
       "id": "fei-mao",
@@ -1807,7 +1964,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 2
+      "featured_order": 2,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:45.111Z"
+      }
     },
     {
       "id": "lao-liu-bei",
@@ -1852,7 +2013,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 3
+      "featured_order": 3,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:45.460Z"
+      }
     },
     {
       "id": "xiao-ma",
@@ -1897,7 +2062,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 5
+      "featured_order": 5,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:45.605Z"
+      }
     },
     {
       "id": "mo-yu-er",
@@ -1943,7 +2112,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 6
+      "featured_order": 6,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:45.915Z"
+      }
     },
     {
       "id": "wang-er-xiao",
@@ -1989,7 +2162,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 7
+      "featured_order": 7,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:45.948Z"
+      }
     },
     {
       "id": "xiao-he-zi-4k",
@@ -2034,7 +2211,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 8
+      "featured_order": 8,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:46.529Z"
+      }
     },
     {
       "id": "xiao-he-zi-single",
@@ -2079,7 +2260,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 9
+      "featured_order": 9,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:46.657Z"
+      }
     },
     {
       "id": "vox",
@@ -2124,7 +2309,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 10
+      "featured_order": 10,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:46.739Z"
+      }
     },
     {
       "id": "ao-wu",
@@ -2169,7 +2358,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 11
+      "featured_order": 11,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:46.799Z"
+      }
     },
     {
       "id": "wu-ming",
@@ -2214,7 +2407,11 @@
         "added_at": "2026-07-12"
       },
       "featured": true,
-      "featured_order": 16
+      "featured_order": 16,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:46.954Z"
+      }
     },
     {
       "id": "xiao-he-zi-multi",
@@ -2259,7 +2456,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 12
+      "featured_order": 12,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:47.447Z"
+      }
     },
     {
       "id": "shi-guang-multi",
@@ -2304,7 +2505,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 13
+      "featured_order": 13,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:47.717Z"
+      }
     },
     {
       "id": "ting-hao-share-multi",
@@ -2349,7 +2554,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 14
+      "featured_order": 14,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:48.084Z"
+      }
     },
     {
       "id": "xiao-he-zi",
@@ -2395,7 +2604,11 @@
         "added_at": "2026-07-04"
       },
       "featured": true,
-      "featured_order": 15
+      "featured_order": 15,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:48.446Z"
+      }
     },
     {
       "id": "meijufen",
@@ -2440,7 +2653,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:48.653Z"
+      }
     },
     {
       "id": "cilixiong",
@@ -2484,12 +2701,16 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:48.741Z"
+      }
     },
     {
       "id": "ciligou",
       "name": "磁力狗",
-      "url": "https://clg56.top",
+      "url": "https://ciligou.net",
       "category": "magnet_search",
       "summary": "干净好用的磁力资源搜索。",
       "summary_short": "干净好用的磁力资源搜索",
@@ -2497,6 +2718,54 @@
         "磁力",
         "BT",
         "资源搜索"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 3,
+        "speed": 3,
+        "clean": 3,
+        "stable": 3,
+        "ease": 3
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-02",
+        "method": "manual",
+        "notes": "根据用户补充更新访问地址为 https://ciligou.net，并将推荐指数调整为 3 星；内容来源、版权状态与链接安全性需要持续观察。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-07-04"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:49.062Z"
+      }
+    },
+    {
+      "id": "cilidi",
+      "name": "磁力帝",
+      "url": "https://www.cld123.com",
+      "category": "magnet_search",
+      "summary": "地址发布页cldi.top。",
+      "summary_short": "地址发布页cldi.top",
+      "tags": [
+        "磁力",
+        "BT",
+        "发布页"
       ],
       "access": {
         "requires_login": false,
@@ -2520,15 +2789,19 @@
       },
       "verification": {
         "status": "caution",
-        "last_checked": "2026-07-04",
+        "last_checked": "2026-08-02",
         "method": "manual",
-        "notes": "根据截图信息收录：推荐指数 5 星，测评备注为干净好用的磁力资源搜索；截图状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+        "notes": "根据用户补充收录：推荐指数 5 星，简介为地址发布页cldi.top；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
       },
       "source": {
         "submitted_by": "maintainer",
-        "added_at": "2026-07-04"
+        "added_at": "2026-08-02"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:49.289Z"
+      }
     },
     {
       "id": "bt-yingshi",
@@ -2573,7 +2846,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:49.290Z"
+      }
     },
     {
       "id": "4k-yuanpan",
@@ -2618,7 +2895,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:49.336Z"
+      }
     },
     {
       "id": "dianyinggang",
@@ -2663,7 +2944,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:49.922Z"
+      }
     },
     {
       "id": "btshijiewang",
@@ -2708,7 +2993,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:49.971Z"
+      }
     },
     {
       "id": "gaoqing-mp4",
@@ -2753,7 +3042,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:50.026Z"
+      }
     },
     {
       "id": "gaoqingzu",
@@ -2798,7 +3091,11 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:51.083Z"
+      }
     },
     {
       "id": "kuake-so-1",
@@ -2843,7 +3140,11 @@
         "added_at": "2026-06-06"
       },
       "featured": true,
-      "featured_order": 1
+      "featured_order": 1,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:51.222Z"
+      }
     },
     {
       "id": "kuakeso",
@@ -2889,7 +3190,11 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 4
+      "featured_order": 4,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:51.226Z"
+      }
     },
     {
       "id": "zhuiju-us",
@@ -2934,7 +3239,11 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 2
+      "featured_order": 2,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:51.990Z"
+      }
     },
     {
       "id": "gugeso",
@@ -2979,7 +3288,11 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 3
+      "featured_order": 3,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.092Z"
+      }
     },
     {
       "id": "moontvplus",
@@ -3017,7 +3330,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3027,9 +3340,8 @@
       "featured_order": 1,
       "github": {
         "full_name": "mtvpls/MoonTVPlus",
-        "stars": 2743,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-11T02:07:50Z"
+        "stars": 3008,
+        "pushed_at": "2026-08-03T11:55:50Z"
       }
     },
     {
@@ -3068,7 +3380,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3078,8 +3390,7 @@
       "featured_order": 2,
       "github": {
         "full_name": "Hiram-Wong/zyfun",
-        "stars": 8670,
-        "weekly_stars": null,
+        "stars": 8767,
         "pushed_at": "2026-06-25T14:11:54Z"
       }
     },
@@ -3119,7 +3430,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3129,9 +3440,8 @@
       "featured_order": 3,
       "github": {
         "full_name": "Guovin/iptv-api",
-        "stars": 24642,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-16T09:14:10Z"
+        "stars": 24895,
+        "pushed_at": "2026-08-14T09:34:05Z"
       }
     },
     {
@@ -3170,7 +3480,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3180,9 +3490,8 @@
       "featured_order": 4,
       "github": {
         "full_name": "iptv-org/iptv",
-        "stars": 133221,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-18T00:25:48Z"
+        "stars": 135987,
+        "pushed_at": "2026-08-17T00:14:39Z"
       }
     },
     {
@@ -3221,7 +3530,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3231,8 +3540,7 @@
       "featured_order": 5,
       "github": {
         "full_name": "fish2018/pansou",
-        "stars": 13908,
-        "weekly_stars": null,
+        "stars": 14226,
         "pushed_at": "2026-06-14T14:06:26Z"
       }
     },
@@ -3272,7 +3580,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3282,8 +3590,7 @@
       "featured_order": 6,
       "github": {
         "full_name": "jiangrui1994/CloudSaver",
-        "stars": 9081,
-        "weekly_stars": null,
+        "stars": 9192,
         "pushed_at": "2026-04-20T03:28:29Z"
       }
     },
@@ -3323,7 +3630,7 @@
         "status": "recommended",
         "last_checked": "2026-06-19",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3333,8 +3640,7 @@
       "featured_order": 7,
       "github": {
         "full_name": "Cp0204/quark-auto-save",
-        "stars": 2929,
-        "weekly_stars": null,
+        "stars": 2989,
         "pushed_at": "2026-07-09T11:44:49Z"
       }
     },
@@ -3374,7 +3680,7 @@
         "status": "recommended",
         "last_checked": "2026-07-10",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3384,9 +3690,8 @@
       "featured_order": 8,
       "github": {
         "full_name": "open-ani/animeko",
-        "stars": 18935,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-18T08:00:54Z"
+        "stars": 19591,
+        "pushed_at": "2026-08-16T15:33:03Z"
       }
     },
     {
@@ -3426,7 +3731,7 @@
         "status": "recommended",
         "last_checked": "2026-07-11",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3436,9 +3741,8 @@
       "featured_order": 9,
       "github": {
         "full_name": "Predidit/Kazumi",
-        "stars": 27792,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-18T13:32:26Z"
+        "stars": 28879,
+        "pushed_at": "2026-08-16T08:41:29Z"
       }
     },
     {
@@ -3478,7 +3782,7 @@
         "status": "recommended",
         "last_checked": "2026-07-12",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3488,8 +3792,7 @@
       "featured_order": 10,
       "github": {
         "full_name": "MoonTechLab/Selene",
-        "stars": 2361,
-        "weekly_stars": null,
+        "stars": 2448,
         "pushed_at": "2026-05-25T10:26:26Z"
       }
     },
@@ -3531,7 +3834,7 @@
         "status": "recommended",
         "last_checked": "2026-07-18",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3541,9 +3844,8 @@
       "featured_order": 11,
       "github": {
         "full_name": "fish2018/webhtv",
-        "stars": 911,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-17T10:40:54Z"
+        "stars": 1196,
+        "pushed_at": "2026-08-17T00:35:30Z"
       }
     },
     {
@@ -3584,7 +3886,7 @@
         "status": "recommended",
         "last_checked": "2026-07-18",
         "method": "manual",
-        "notes": "根据 GitHub 公开仓库信息收录；star 数、最近一周 Star 与仓库更新时间来自 GitHub API。"
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
       },
       "source": {
         "submitted_by": "maintainer",
@@ -3594,9 +3896,8 @@
       "featured_order": 12,
       "github": {
         "full_name": "Silent1566/webhtv",
-        "stars": 304,
-        "weekly_stars": null,
-        "pushed_at": "2026-07-18T15:07:30Z"
+        "stars": 428,
+        "pushed_at": "2026-08-16T18:19:43Z"
       }
     },
     {
@@ -3639,7 +3940,263 @@
         "submitted_by": "@LFNHHHHH",
         "added_at": "2026-07-10"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.490Z"
+      }
+    },
+    {
+      "id": "yangke-peekpro",
+      "name": "羊壳 PeekPro",
+      "url": "https://b.zhuiju.me/archives/19/",
+      "category": "player",
+      "summary": "基于 FongMi 二开，优化主题、弹幕等。",
+      "summary_short": "基于 FongMi 二开，优化主题、弹幕等",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi 二开，优化主题、弹幕、播放器体验，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 5,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.630Z"
+      }
+    },
+    {
+      "id": "webhometv-player",
+      "name": "WebHomeTV",
+      "url": "https://b.zhuiju.me/archives/18/",
+      "category": "player",
+      "summary": "基于 FongMi / CatVod 二次开发，增强了 8 项。",
+      "summary_short": "基于 FongMi / CatVod 二次开发，增强了8项",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "CatVod",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi / CatVod 二次开发，重点增强首页等 8 项，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 4,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.659Z"
+      }
+    },
+    {
+      "id": "ok-yingshi-player",
+      "name": "OK影视",
+      "url": "https://b.zhuiju.me/archives/17/",
+      "category": "player",
+      "summary": "OK影视版 = FongMi蜂蜜版 + 各种新功能。",
+      "summary_short": "OK影视版 = FongMi蜂蜜版 + 各种新功能",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；OK影视版 = FongMi蜂蜜版 + 各种新功能，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 3,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.696Z"
+      }
+    },
+    {
+      "id": "fongmi-fengmi",
+      "name": "FongMi 蜂蜜",
+      "url": "https://b.zhuiju.me/archives/16/",
+      "category": "player",
+      "summary": "基于 CatVod 二开，支持 Android TV 和手机。",
+      "summary_short": "基于 CatVod 二开 ，支持Android TV和手机",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "CatVod",
+        "Android TV",
+        "Android"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 CatVod 二开，支持 Android TV 大屏和手机，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 2,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.714Z"
+      }
+    },
+    {
+      "id": "yingshicang-player",
+      "name": "影视仓",
+      "url": "https://b.zhuiju.me/archives/15/",
+      "category": "player",
+      "summary": "基于 TVBox 二次开发，魔改版本里知名度最高。",
+      "summary_short": "基于 TVBox 二次开发，魔改版本里知名度最高",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 TVBox 二次开发，是魔改版本里知名度较高的空壳应用，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 1,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.731Z"
+      }
     },
     {
       "id": "sidhub-cc-7",
@@ -3681,7 +4238,11 @@
         "submitted_by": "@LesliesCheung",
         "added_at": "2026-07-18"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "restricted",
+        "checked_at": "2026-08-23T01:33:52.749Z"
+      }
     },
     {
       "id": "acg-rip-10",
@@ -3723,7 +4284,356 @@
         "submitted_by": "@moeyukisako",
         "added_at": "2026-07-19"
       },
-      "featured": true
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.787Z"
+      }
+    },
+    {
+      "id": "github-com-12",
+      "name": "sky-tv",
+      "url": "https://github.com/sky22333/sky-tv",
+      "category": "open_source",
+      "summary": "现代化跨平台视频播放器空壳应用。",
+      "summary_short": "现代化跨平台视频播放器空壳应用",
+      "tags": [
+        "开源项目"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "low"
+      },
+      "verification": {
+        "status": "recommended",
+        "last_checked": "2026-07-27",
+        "method": "manual",
+        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：206-7-20。 提交者风险说明：sky-tv 只是个空壳播放器：\n\n- 不内置任何影视、直播、频道、节目单或解析服务。\n- 不提供任何视频内容、下载内容或版权资源。\n- 项目开发者不对用户的使用行为承担任何法律责任。\n- 用户应在遵守其所在国家或地区法律法规的前提下使用本软件。\n- 本项目是基于技术学习和交流为目开发的开源软件。"
+      },
+      "source": {
+        "submitted_by": "@sky22333",
+        "added_at": "2026-07-27"
+      },
+      "featured": true,
+      "github": {
+        "full_name": "sky22333/sky-tv",
+        "stars": 92,
+        "pushed_at": "2026-07-25T16:42:10Z"
+      }
+    },
+    {
+      "id": "yangke-peekpro-picktv",
+      "name": "羊壳 PeekPro",
+      "url": "https://github.com/ingriddaleusag-dotcom/PickTV",
+      "category": "open_source",
+      "summary": "羊壳 PeekPro 是基于 FongMi/TV 优化 UI 的开源项目。",
+      "summary_short": "基于 FongMi/TV 优化 UI",
+      "tags": [
+        "开源项目",
+        "Android",
+        "FongMi",
+        "TVBox",
+        "影音应用"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "free",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "low"
+      },
+      "verification": {
+        "status": "recommended",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 13,
+      "github": {
+        "full_name": "ingriddaleusag-dotcom/PickTV",
+        "stars": 913,
+        "pushed_at": "2026-08-14T03:45:30Z"
+      }
+    },
+    {
+      "id": "fongmi-tv",
+      "name": "FongMi TV",
+      "url": "https://github.com/FongMi/TV",
+      "category": "open_source",
+      "summary": "FongMi TV 是基于 CatVod 的开源 Android 影音应用。",
+      "summary_short": "基于 CatVod 的开源 Android 影音应用",
+      "tags": [
+        "开源项目",
+        "Android",
+        "FongMi",
+        "CatVod",
+        "影音应用"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "free",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "low"
+      },
+      "verification": {
+        "status": "recommended",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "根据 GitHub 公开仓库信息收录；star 数与仓库更新时间来自 GitHub API。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 14,
+      "github": {
+        "full_name": "FongMi/TV",
+        "stars": 9113,
+        "pushed_at": "2026-08-07T04:27:17Z"
+      }
+    },
+    {
+      "id": "4kvm-cc-18",
+      "name": "4k影视",
+      "url": "https://www.4kvm.cc/",
+      "category": "online_video",
+      "summary": "界面简洁，有广告能接受（需梯子）。",
+      "summary_short": "界面简洁，有广告能接受（需梯子）",
+      "tags": [
+        "在线影视",
+        "有广告",
+        "需梯子"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "根据用户补充更新简介为界面简洁，有广告能接受（需梯子）。维护者 @laoma2053 已通过 ok 确认收录。测试信息：2026-08-01，中国大陆。提交者风险说明：有一点小广告，开始播放视频如果不用广告拦截器广告5秒后可关闭。"
+      },
+      "source": {
+        "submitted_by": "@Function21",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:53.204Z"
+      }
+    },
+    {
+      "id": "fdzys",
+      "name": "饭搭子影视",
+      "url": "https://fdzys.com",
+      "category": "online_video",
+      "summary": "最新热门电影电视剧动漫综艺。",
+      "summary_short": "最新热门电影电视剧动漫综艺",
+      "tags": [
+        "在线影视",
+        "电影",
+        "电视剧",
+        "动漫",
+        "综艺"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-08",
+        "method": "manual",
+        "notes": "根据用户补充收录在线影视资源：饭搭子影视（https://fdzys.com，推荐指数 5 星，简介：最新热门电影电视剧动漫综艺）；提交状态不作为本项目状态依据，后续由 GitHub Actions 自动检测可用性，并持续观察版权状态与站点安全性。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-08"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:53.794Z"
+      }
+    },
+    {
+      "id": "sa-video",
+      "name": "SA视频",
+      "url": "https://www.lsjys11.com/",
+      "category": "online_video",
+      "summary": "最新电影电视剧动漫综艺。",
+      "summary_short": "最新电影电视剧动漫综艺",
+      "tags": [
+        "在线影视",
+        "电影",
+        "电视剧",
+        "动漫",
+        "综艺"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-08",
+        "method": "manual",
+        "notes": "根据用户补充收录在线影视资源：SA视频（https://www.lsjys11.com/，推荐指数 5 星，简介：最新电影电视剧动漫综艺）；本次页面探测超时，暂不据此判定可用性，后续由 GitHub Actions 自动检测，并持续观察版权状态与站点安全性。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-08"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:53.833Z"
+      }
+    },
+    {
+      "id": "naifei-fyi-19",
+      "name": "奈飞工厂",
+      "url": "https://naifei.fyi/",
+      "category": "online_video",
+      "summary": "国区可访问，资源无广",
+      "summary_short": "国区可访问，资源无广",
+      "tags": [
+        "在线影视"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-05",
+        "method": "manual",
+        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-08-05，中国大陆。 提交者风险说明：暂未发现"
+      },
+      "source": {
+        "submitted_by": "@xwx6164",
+        "added_at": "2026-08-10"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:53.859Z"
+      }
     }
   ]
 }

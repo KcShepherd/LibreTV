@@ -37,6 +37,31 @@ function scoreColor(val) {
     return 'text-gray-500';
 }
 
+// 可访问性状态 → 图标与文案
+const AVAILABILITY_META = {
+    reachable: { icon: '🟢', label: '可访问' },
+    restricted: { icon: '🟡', label: '受限' },
+    unreachable: { icon: '🔴', label: '无法访问' }
+};
+const STATUS_ORDER = { reachable: 0, restricted: 1, unreachable: 2 };
+
+// 推荐指数：四项体验评分（多/快/净/稳）平均后四舍五入
+function getRecommendScore(item) {
+    const s = item.scores || {};
+    return Math.round(((s.more || 0) + (s.speed || 0) + (s.clean || 0) + (s.stable || 0)) / 4);
+}
+
+// 按推荐指数降序 + 状态优先排序
+function sortResources(list) {
+    return [...list].sort((a, b) => {
+        const scoreDiff = getRecommendScore(b) - getRecommendScore(a);
+        if (scoreDiff !== 0) return scoreDiff;
+        const orderA = STATUS_ORDER[a.availability?.status] ?? 3;
+        const orderB = STATUS_ORDER[b.availability?.status] ?? 3;
+        return orderA - orderB;
+    });
+}
+
 // 渲染5维评分条
 function renderScoreBar(scores) {
     const dims = [
@@ -75,12 +100,27 @@ function renderCard(item) {
     const safeSummary = escapeHtml(item.summary_short || item.summary || '');
     const safeUrl = escapeHtml(item.url);
 
+    // 状态徽章（无检测记录显示 ⚪ 未检测）
+    const meta = AVAILABILITY_META[item.availability?.status];
+    const statusBadge = meta
+        ? `<span class="text-[11px] px-1.5 py-0.5 rounded bg-[#222] border border-[#333] whitespace-nowrap shrink-0">${meta.icon} ${meta.label}</span>`
+        : `<span class="text-[11px] px-1.5 py-0.5 rounded bg-[#222] border border-[#333] text-gray-500 whitespace-nowrap shrink-0">⚪ 未检测</span>`;
+
+    // 推荐指数星级
+    const recommend = getRecommendScore(item);
+    const stars = '🌟'.repeat(recommend);
+
     return `
     <div class="resource-card bg-[#111] hover:bg-[#1a1a1a] rounded-lg p-4 border border-[#222] hover:border-emerald-500/30 cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/5"
          onclick="window.open('${safeUrl}', '_blank')"
          title="${safeName}&#10;${safeSummary}&#10;点击访问：${safeUrl}">
-        <!-- 站点名称 -->
-        <h3 class="text-base font-bold text-white mb-1 line-clamp-1">${safeName}</h3>
+        <!-- 站点名称 + 状态 -->
+        <div class="flex items-center justify-between gap-2 mb-1">
+            <h3 class="text-base font-bold text-white line-clamp-1">${safeName}</h3>
+            ${statusBadge}
+        </div>
+        <!-- 推荐指数 -->
+        <div class="text-xs text-amber-400 mb-2">${stars} <span class="text-gray-500">推荐 ${recommend}/5</span></div>
         <!-- 简介 -->
         <p class="text-xs text-gray-400 line-clamp-2 mb-3 min-h-[2.5em]">${safeSummary}</p>
         <!-- 评分条 -->
@@ -135,7 +175,7 @@ function renderCards(category) {
         return;
     }
 
-    container.innerHTML = filtered.map(renderCard).join('');
+    container.innerHTML = sortResources(filtered).map(renderCard).join('');
 }
 
 // 加载 JSON 数据
