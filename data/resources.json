@@ -2755,6 +2755,304 @@
       }
     },
     {
+      "id": "tv-xn-yhqu5zs87a-top-3",
+      "name": "FongMi 影视",
+      "url": "https://tv.xn--yhqu5zs87a.top/",
+      "category": "player",
+      "summary": "tvbox二开/带视频源，手机端/平板端已测试",
+      "summary_short": "tvbox二开/带视频源，手机端/平板端已测试",
+      "tags": [
+        "TVBox"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-07-10",
+        "method": "manual",
+        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-07-10 大陆。 提交者风险说明：无广告"
+      },
+      "source": {
+        "submitted_by": "@LFNHHHHH",
+        "added_at": "2026-07-10"
+      },
+      "featured": true,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.490Z"
+      }
+    },
+    {
+      "id": "yangke-peekpro",
+      "name": "羊壳 PeekPro",
+      "url": "https://b.zhuiju.me/archives/19/",
+      "category": "player",
+      "summary": "基于 FongMi 二开，优化主题、弹幕等。",
+      "summary_short": "基于 FongMi 二开，优化主题、弹幕等",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi 二开，优化主题、弹幕、播放器体验，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 5,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.630Z"
+      }
+    },
+    {
+      "id": "webhometv-player",
+      "name": "WebHomeTV",
+      "url": "https://b.zhuiju.me/archives/18/",
+      "category": "player",
+      "summary": "基于 FongMi / CatVod 二次开发，增强了 8 项。",
+      "summary_short": "基于 FongMi / CatVod 二次开发，增强了8项",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "CatVod",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi / CatVod 二次开发，重点增强首页等 8 项，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 4,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.659Z"
+      }
+    },
+    {
+      "id": "ok-yingshi-player",
+      "name": "OK影视",
+      "url": "https://b.zhuiju.me/archives/17/",
+      "category": "player",
+      "summary": "OK影视版 = FongMi蜂蜜版 + 各种新功能。",
+      "summary_short": "OK影视版 = FongMi蜂蜜版 + 各种新功能",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；OK影视版 = FongMi蜂蜜版 + 各种新功能，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 3,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.696Z"
+      }
+    },
+    {
+      "id": "fongmi-fengmi",
+      "name": "FongMi 蜂蜜",
+      "url": "https://b.zhuiju.me/archives/16/",
+      "category": "player",
+      "summary": "基于 CatVod 二开，支持 Android TV 和手机。",
+      "summary_short": "基于 CatVod 二开 ，支持Android TV和手机",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "FongMi",
+        "CatVod",
+        "Android TV",
+        "Android"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 CatVod 二开，支持 Android TV 大屏和手机，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 2,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.714Z"
+      }
+    },
+    {
+      "id": "yingshicang-player",
+      "name": "影视仓",
+      "url": "https://b.zhuiju.me/archives/15/",
+      "category": "player",
+      "summary": "基于 TVBox 二次开发，魔改版本里知名度最高。",
+      "summary_short": "基于 TVBox 二次开发，魔改版本里知名度最高",
+      "tags": [
+        "TVBox",
+        "影视仓",
+        "Android TV"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "unknown",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-01",
+        "method": "manual",
+        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 TVBox 二次开发，是魔改版本里知名度较高的空壳应用，后续由自动检测刷新可访问状态。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-01"
+      },
+      "featured": true,
+      "featured_order": 1,
+      "availability": {
+        "status": "reachable",
+        "checked_at": "2026-08-23T01:33:52.731Z"
+      }
+    },
+    {
       "id": "iptv-org",
       "name": "IPTV-org",
       "url": "https://github.com/iptv-org/iptv",
@@ -3542,6 +3840,188 @@
       }
     },
     {
+      "id": "juhebd",
+      "name": "BD影视聚合",
+      "url": "https://www.juhebd.com/",
+      "category": "magnet_search",
+      "summary": "提供最新高清电影、电视剧下载资源。",
+      "summary_short": "最新高清电影电视剧下载",
+      "tags": [
+        "磁力",
+        "BT",
+        "电影",
+        "电视剧",
+        "高清"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-29",
+        "method": "manual",
+        "notes": "根据用户补充收录：推荐指数 5 星，简介为最新高清电影电视剧下载；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-29"
+      },
+      "featured": true
+    },
+    {
+      "id": "ainunu",
+      "name": "爱努努",
+      "url": "https://video.ainunu.com/",
+      "category": "magnet_search",
+      "summary": "提供绿色影视下载资源。",
+      "summary_short": "绿色影视下载",
+      "tags": [
+        "磁力",
+        "BT",
+        "影视下载"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-29",
+        "method": "manual",
+        "notes": "根据用户补充收录：推荐指数 4 星，简介为绿色影视下载；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-29"
+      },
+      "featured": true
+    },
+    {
+      "id": "bdflixs",
+      "name": "BD电影首发",
+      "url": "https://www.bdflixs.com/",
+      "category": "magnet_search",
+      "summary": "提供4K蓝光高清电影更新。",
+      "summary_short": "4K蓝光高清电影更新",
+      "tags": [
+        "磁力",
+        "BT",
+        "电影",
+        "4K",
+        "蓝光"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-29",
+        "method": "manual",
+        "notes": "根据用户补充收录：推荐指数 5 星，简介为4K蓝光高清电影更新；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-29"
+      },
+      "featured": true
+    },
+    {
+      "id": "ldysg",
+      "name": "找电影时光",
+      "url": "https://www.ldysg.win/",
+      "category": "magnet_search",
+      "summary": "提供高清晰、无水印影视下载资源。",
+      "summary_short": "影视高清晰无水印下载",
+      "tags": [
+        "磁力",
+        "BT",
+        "影视下载",
+        "高清",
+        "无水印"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-08-29",
+        "method": "manual",
+        "notes": "根据用户补充收录：推荐指数 5 星，简介为影视高清晰无水印下载；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+      },
+      "source": {
+        "submitted_by": "maintainer",
+        "added_at": "2026-08-29"
+      },
+      "featured": true
+    },
+    {
       "id": "meijufen",
       "name": "美剧粉",
       "url": "https://www.mjf2020.com",
@@ -3584,11 +4064,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:48.653Z"
-      }
+      "featured": true
     },
     {
       "id": "cilixiong",
@@ -3632,11 +4108,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-06-19"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:48.741Z"
-      }
+      "featured": true
     },
     {
       "id": "ciligou",
@@ -3680,11 +4152,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:49.062Z"
-      }
+      "featured": true
     },
     {
       "id": "cilidi",
@@ -3728,11 +4196,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-08-02"
       },
-      "featured": true,
-      "availability": {
-        "status": "restricted",
-        "checked_at": "2026-08-23T01:33:49.289Z"
-      }
+      "featured": true
     },
     {
       "id": "bt-yingshi",
@@ -3777,16 +4241,12 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-04"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:49.290Z"
-      }
+      "featured": true
     },
     {
       "id": "4k-yuanpan",
-      "name": "4K原盘",
-      "url": "https://pomo.mom",
+      "name": "POMO",
+      "url": "https://pomo.mom/",
       "category": "magnet_search",
       "summary": "4K原盘免费下载。",
       "summary_short": "4K原盘免费下载",
@@ -3818,19 +4278,15 @@
       },
       "verification": {
         "status": "caution",
-        "last_checked": "2026-07-12",
+        "last_checked": "2026-08-29",
         "method": "manual",
-        "notes": "根据用户补充收录：推荐指数 5 星，测评备注为4K原盘免费下载；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
+        "notes": "根据用户补充将网站名更新为 POMO，并确认推荐指数 5 星、简介为4K原盘免费下载；提交状态不作为本项目状态依据，内容来源、版权状态与链接安全性需要持续观察。"
       },
       "source": {
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:49.336Z"
-      }
+      "featured": true
     },
     {
       "id": "dianyinggang",
@@ -3875,11 +4331,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:49.922Z"
-      }
+      "featured": true
     },
     {
       "id": "btshijiewang",
@@ -3924,11 +4376,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:49.971Z"
-      }
+      "featured": true
     },
     {
       "id": "gaoqing-mp4",
@@ -3973,11 +4421,7 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true,
-      "availability": {
-        "status": "restricted",
-        "checked_at": "2026-08-23T01:33:50.026Z"
-      }
+      "featured": true
     },
     {
       "id": "gaoqingzu",
@@ -4022,11 +4466,91 @@
         "submitted_by": "maintainer",
         "added_at": "2026-07-12"
       },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:51.083Z"
-      }
+      "featured": true
+    },
+    {
+      "id": "sidhub-cc-7",
+      "name": "SeedHub",
+      "url": "https://sidhub.cc/",
+      "category": "magnet_search",
+      "summary": "影视&动漫分享，页面纯净、无广告。",
+      "summary_short": "影视&动漫分享，页面纯净、无广告",
+      "tags": [
+        "磁力与 BT"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 5,
+        "speed": 5,
+        "clean": 5,
+        "stable": 5,
+        "ease": 5
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-07-18",
+        "method": "manual",
+        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-7-14 中国大陆。 维护者补充：影视&动漫分享，页面纯净、无广告；推荐指数 5 星。 提交者风险说明：暂无"
+      },
+      "source": {
+        "submitted_by": "@LesliesCheung",
+        "added_at": "2026-07-18"
+      },
+      "featured": true
+    },
+    {
+      "id": "acg-rip-10",
+      "name": "ACG.RIP",
+      "url": "https://acg.rip/",
+      "category": "magnet_search",
+      "summary": "磁力为主的动漫、OST发布，无广",
+      "summary_short": "磁力为主的动漫、OST发布，无广",
+      "tags": [
+        "磁力与 BT"
+      ],
+      "access": {
+        "requires_login": false,
+        "free_level": "unknown",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      "scores": {
+        "more": 4,
+        "speed": 4,
+        "clean": 4,
+        "stable": 4,
+        "ease": 4
+      },
+      "risks": {
+        "copyright": "high",
+        "safety": "medium",
+        "privacy": "unknown",
+        "payment": "unknown"
+      },
+      "verification": {
+        "status": "caution",
+        "last_checked": "2026-07-19",
+        "method": "manual",
+        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-7-19，日本。 提交者风险说明：暂未发现广告、跳转、诱导下载以及隐私问题，版权未知，没有支付功能。**大陆不可访问**。"
+      },
+      "source": {
+        "submitted_by": "@moeyukisako",
+        "added_at": "2026-07-19"
+      },
+      "featured": true
     },
     {
       "id": "kuake-so-1",
@@ -4071,15 +4595,11 @@
         "added_at": "2026-06-06"
       },
       "featured": true,
-      "featured_order": 1,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:51.222Z"
-      }
+      "featured_order": 1
     },
     {
       "id": "kuakeso",
-      "name": "夸克搜",
+      "name": "KK网盘搜",
       "url": "https://kkso.net",
       "category": "cloud_search",
       "summary": "支持夸克网盘与百度网盘资源搜索的网盘搜索站。",
@@ -4121,11 +4641,7 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 4,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:51.226Z"
-      }
+      "featured_order": 4
     },
     {
       "id": "zhuiju-us",
@@ -4170,16 +4686,12 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 2,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:51.990Z"
-      }
+      "featured_order": 2
     },
     {
       "id": "gugeso",
       "name": "谷哥搜",
-      "url": "https://www.gugeso.com/",
+      "url": "https://gugeso.com/",
       "category": "cloud_search",
       "summary": "支持多种网盘资源搜索的网盘搜索站。",
       "summary_short": "支持9种网盘的综合搜索站",
@@ -4219,11 +4731,7 @@
         "added_at": "2026-06-13"
       },
       "featured": true,
-      "featured_order": 3,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.092Z"
-      }
+      "featured_order": 3
     },
     {
       "id": "moontvplus",
@@ -4829,396 +5337,6 @@
         "full_name": "Silent1566/webhtv",
         "stars": 428,
         "pushed_at": "2026-08-16T18:19:43Z"
-      }
-    },
-    {
-      "id": "tv-xn-yhqu5zs87a-top-3",
-      "name": "FongMi 影视",
-      "url": "https://tv.xn--yhqu5zs87a.top/",
-      "category": "player",
-      "summary": "tvbox二开/带视频源，手机端/平板端已测试",
-      "summary_short": "tvbox二开/带视频源，手机端/平板端已测试",
-      "tags": [
-        "TVBox"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 4,
-        "speed": 4,
-        "clean": 4,
-        "stable": 4,
-        "ease": 4
-      },
-      "risks": {
-        "copyright": "high",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-07-10",
-        "method": "manual",
-        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-07-10 大陆。 提交者风险说明：无广告"
-      },
-      "source": {
-        "submitted_by": "@LFNHHHHH",
-        "added_at": "2026-07-10"
-      },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.490Z"
-      }
-    },
-    {
-      "id": "yangke-peekpro",
-      "name": "羊壳 PeekPro",
-      "url": "https://b.zhuiju.me/archives/19/",
-      "category": "player",
-      "summary": "基于 FongMi 二开，优化主题、弹幕等。",
-      "summary_short": "基于 FongMi 二开，优化主题、弹幕等",
-      "tags": [
-        "TVBox",
-        "影视仓",
-        "FongMi",
-        "Android TV"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "unknown",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-08-01",
-        "method": "manual",
-        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi 二开，优化主题、弹幕、播放器体验，后续由自动检测刷新可访问状态。"
-      },
-      "source": {
-        "submitted_by": "maintainer",
-        "added_at": "2026-08-01"
-      },
-      "featured": true,
-      "featured_order": 5,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.630Z"
-      }
-    },
-    {
-      "id": "webhometv-player",
-      "name": "WebHomeTV",
-      "url": "https://b.zhuiju.me/archives/18/",
-      "category": "player",
-      "summary": "基于 FongMi / CatVod 二次开发，增强了 8 项。",
-      "summary_short": "基于 FongMi / CatVod 二次开发，增强了8项",
-      "tags": [
-        "TVBox",
-        "影视仓",
-        "FongMi",
-        "CatVod",
-        "Android TV"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "unknown",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-08-01",
-        "method": "manual",
-        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 FongMi / CatVod 二次开发，重点增强首页等 8 项，后续由自动检测刷新可访问状态。"
-      },
-      "source": {
-        "submitted_by": "maintainer",
-        "added_at": "2026-08-01"
-      },
-      "featured": true,
-      "featured_order": 4,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.659Z"
-      }
-    },
-    {
-      "id": "ok-yingshi-player",
-      "name": "OK影视",
-      "url": "https://b.zhuiju.me/archives/17/",
-      "category": "player",
-      "summary": "OK影视版 = FongMi蜂蜜版 + 各种新功能。",
-      "summary_short": "OK影视版 = FongMi蜂蜜版 + 各种新功能",
-      "tags": [
-        "TVBox",
-        "影视仓",
-        "FongMi",
-        "Android TV"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "unknown",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-08-01",
-        "method": "manual",
-        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；OK影视版 = FongMi蜂蜜版 + 各种新功能，后续由自动检测刷新可访问状态。"
-      },
-      "source": {
-        "submitted_by": "maintainer",
-        "added_at": "2026-08-01"
-      },
-      "featured": true,
-      "featured_order": 3,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.696Z"
-      }
-    },
-    {
-      "id": "fongmi-fengmi",
-      "name": "FongMi 蜂蜜",
-      "url": "https://b.zhuiju.me/archives/16/",
-      "category": "player",
-      "summary": "基于 CatVod 二开，支持 Android TV 和手机。",
-      "summary_short": "基于 CatVod 二开 ，支持Android TV和手机",
-      "tags": [
-        "TVBox",
-        "影视仓",
-        "FongMi",
-        "CatVod",
-        "Android TV",
-        "Android"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "unknown",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-08-01",
-        "method": "manual",
-        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 CatVod 二开，支持 Android TV 大屏和手机，后续由自动检测刷新可访问状态。"
-      },
-      "source": {
-        "submitted_by": "maintainer",
-        "added_at": "2026-08-01"
-      },
-      "featured": true,
-      "featured_order": 2,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.714Z"
-      }
-    },
-    {
-      "id": "yingshicang-player",
-      "name": "影视仓",
-      "url": "https://b.zhuiju.me/archives/15/",
-      "category": "player",
-      "summary": "基于 TVBox 二次开发，魔改版本里知名度最高。",
-      "summary_short": "基于 TVBox 二次开发，魔改版本里知名度最高",
-      "tags": [
-        "TVBox",
-        "影视仓",
-        "Android TV"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "unknown",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-08-01",
-        "method": "manual",
-        "notes": "维护者补充的 TVBox/影视仓空壳资源，按 5 星收录；基于 TVBox 二次开发，是魔改版本里知名度较高的空壳应用，后续由自动检测刷新可访问状态。"
-      },
-      "source": {
-        "submitted_by": "maintainer",
-        "added_at": "2026-08-01"
-      },
-      "featured": true,
-      "featured_order": 1,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.731Z"
-      }
-    },
-    {
-      "id": "sidhub-cc-7",
-      "name": "SeedHub",
-      "url": "https://sidhub.cc/",
-      "category": "magnet_search",
-      "summary": "影视&动漫分享，页面纯净、无广告。",
-      "summary_short": "影视&动漫分享，页面纯净、无广告",
-      "tags": [
-        "磁力与 BT"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 5,
-        "speed": 5,
-        "clean": 5,
-        "stable": 5,
-        "ease": 5
-      },
-      "risks": {
-        "copyright": "high",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-07-18",
-        "method": "manual",
-        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-7-14 中国大陆。 维护者补充：影视&动漫分享，页面纯净、无广告；推荐指数 5 星。 提交者风险说明：暂无"
-      },
-      "source": {
-        "submitted_by": "@LesliesCheung",
-        "added_at": "2026-07-18"
-      },
-      "featured": true,
-      "availability": {
-        "status": "restricted",
-        "checked_at": "2026-08-23T01:33:52.749Z"
-      }
-    },
-    {
-      "id": "acg-rip-10",
-      "name": "ACG.RIP",
-      "url": "https://acg.rip/",
-      "category": "magnet_search",
-      "summary": "磁力为主的动漫、OST发布，无广",
-      "summary_short": "磁力为主的动漫、OST发布，无广",
-      "tags": [
-        "磁力与 BT"
-      ],
-      "access": {
-        "requires_login": false,
-        "free_level": "unknown",
-        "regions": [
-          "GLOBAL"
-        ]
-      },
-      "scores": {
-        "more": 4,
-        "speed": 4,
-        "clean": 4,
-        "stable": 4,
-        "ease": 4
-      },
-      "risks": {
-        "copyright": "high",
-        "safety": "medium",
-        "privacy": "unknown",
-        "payment": "unknown"
-      },
-      "verification": {
-        "status": "caution",
-        "last_checked": "2026-07-19",
-        "method": "manual",
-        "notes": "维护者 @laoma2053 已通过 ok 确认收录。 测试信息：2026-7-19，日本。 提交者风险说明：暂未发现广告、跳转、诱导下载以及隐私问题，版权未知，没有支付功能。**大陆不可访问**。"
-      },
-      "source": {
-        "submitted_by": "@moeyukisako",
-        "added_at": "2026-07-19"
-      },
-      "featured": true,
-      "availability": {
-        "status": "reachable",
-        "checked_at": "2026-08-23T01:33:52.787Z"
       }
     },
     {
