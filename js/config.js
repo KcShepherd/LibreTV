@@ -112,19 +112,20 @@ const API_SITES = {
         api: 'https://cj.lziapi.com/api.php/provide/vod/',
         name: '量子资源站'
     },
-    // 以下来自 TVBox 配置扫描的新增资源
+    // ============ 以下为 TVBox/影视仓资源（来自 awesome-zhuiju-free）============
     ffzy2: {
         api: 'http://ffzy.tv/api.php/provide/vod',
-        name: '非凡[直连]'
+        name: '非凡[直连·TVBox]'
     },
     hongniu: {
         api: 'https://www.hongniuzy2.com/api.php/provide/vod',
-        name: '红牛资源'
+        name: '红牛资源[TVBox]'
     },
     guangsu: {
         api: 'https://api.guangsuapi.com/api.php/provide/vod',
-        name: '光速资源'
+        name: '光速资源[TVBox]'
     },
+    // ============ 以上为 TVBox/影视仓资源 ============
     testSource: {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
